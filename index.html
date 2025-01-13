@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login-form" class="form-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="login-button">Login</button>
+    </div>
+
+    <!-- Wordle Game Container -->
+    <div id="wordle-container" class="hidden">
+        <div id="notification" class="notification"></div>
+        <h2>Wordle Game</h2>
+        <div id="game-board" class="game-board"></div>
+        <button onclick="logout()" class="logout-button">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

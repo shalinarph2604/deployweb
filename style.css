@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.game-board {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.word-row {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 5px;
+}
+
+.word-cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.present {
+    background-color: #ffc107;
+    color: white;
+}
+
+.absent {
+    background-color: #dc3545;
+    color: white;
+}
+
+.notification {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.notification.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.notification.error {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout-button {
+    display: block;
+    margin: 20px auto;
+    background-color: #ffc107;
+    color: black;
+}
